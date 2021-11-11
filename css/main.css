@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "GT America Expanded Bold";
+}
+@font-face {
+    font-family: "GT America Expanded Bold";
+    src: url(@font-face/gtAmerica.ttf);
+    src: url(@font-face/22b4c73e6141de7c9937f42cb58bdb4b.eot);
+    src: url(@font-face/22b4c73e6141de7c9937f42cb58bdb4b.svg);
+    src: url(@font-face/22b4c73e6141de7c9937f42cb58bdb4b.woff);
+    src: url(@font-face/22b4c73e6141de7c9937f42cb58bdb4b.woff2);
+}
