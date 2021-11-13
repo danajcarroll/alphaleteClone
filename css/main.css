@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "GT America Expanded Bold";
     border-radius: 1rem;
 }
 @font-face {
@@ -61,6 +60,15 @@ main {
 ul {
     list-style: none;
 }
+h1, h2 {
+    font-family: "GT America Expanded Bold";
+}
+button {
+    border: none;
+}
+section {
+    margin-bottom: 2rem;
+}
 /* ***** HEADER STYLES ***** */
 header {
     background: var(--color-offwhite);
@@ -83,6 +91,7 @@ nav {
     justify-content: space-between;
 }
 .logo {
+    font-family: "GT America Expanded Bold";
     color: var(--color-matteblack);
     font-size: 1rem;
 }
@@ -100,14 +109,16 @@ nav {
     background: var(--color-matteblack) ;
 }
 
-/* ***** OUR FAVOURITES STYLES ***** */
-.ourFavourites {
+/* ***** SECTIONS WITH TEXT ON IMAGES / OUR FAVOURITES STYLES ***** */
+.overlayBoxType {
     height: 60vh;
     width: 100%;
     position: relative;
+    font-family: "GT America Expanded Bold";
 }
-.ourFavouritesImages {
+.sectionOverlay {
     position: relative;
+    margin-bottom: 1rem;
 }
 .sectionInfoOverlays {
     position: absolute;
@@ -124,15 +135,105 @@ nav {
     font-size: 1.25rem;
     margin-bottom: 0.25rem;
 }
+.overlayBio {
+    font-family: "Montserrat Bold";
+    font-size: 0.75rem;
+}
 .sectionButton {
     color: var(--color-deepwhite);
     border: none;
     font-size: 0.9rem;
     margin-top: 0.2rem;
 }
-.shopWomen , .shopMen {
-    background-color: rgba(255, 205, 171, 0.5);
+.sectionInfoOverlays a p {
     backdrop-filter: blur(5px);
     display: inline-block;
     padding: 0.75rem;
+}
+.shopWomen , .shopMen {
+    background-color: rgba(255, 205, 171, 0.5);
+}
+
+/* ***** CAROUSEL SECTION UMBRELLA STYLES ***** */
+.carouselSection h1 {
+    color: var(--color-matteblack);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.carouselPart {
+    display: flex;
+    overflow-x: visible;
+    position: relative;
+}
+.carouselBox {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 80%;
+    margin-right: 2.5rem;
+}
+.carouselImage {
+    width: 100%;
+}
+.carouselInformation {
+    width: 100%;
+    box-shadow: 5px 5px 10px var(--color-primary-shadow-dark);
+    padding: 1rem 1.25rem;
+    font-family: "Montserrat Bold";
+}
+.colourBox, .priceStatus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.25rem;
+    font-size: 0.6rem;
+}
+.itemTitle {
+    font-size: 0.75rem;
+    color: var(--color-matteblack);
+}
+.itemColour {
+    color: var(--color-mattegrey);
+}
+.itemColourAmount {
+    color: var(--color-matteblack);
+    background-color: var(--color-matteblack-trans);
+    padding: 0.25rem;
+}
+.itemPrice {
+    color: var(--color-matteblack);
+}
+.itemStatus {
+    color: var(--color-deepwhite);
+    background-color: var(--color-matteblack);
+    padding: 0.25rem 0.75rem;
+}
+.carouselButtons {
+    position: absolute;
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: var(--color-deepwhite);
+    box-shadow: 0px 0px 10px var(--color-primary-shadow-dark);
+    top: 40%;
+}
+.prevButton {
+    left: 0;
+}
+.nextButton {
+    right: 5%;
+}
+i {
+    font-weight: 900;
+}
+
+/* ***** WOMENS GALLERY STYLES ***** */
+.sportsBras {
+    background-color: rgba(0, 84, 67, 0.5);
+}
+.leggingsButton {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.forHer .sectionInfoOverlays {
+    text-align: right;
+    right: 0;
 }

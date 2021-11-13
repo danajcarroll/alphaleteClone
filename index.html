@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Alphalete</title>
 </head>
@@ -22,14 +24,14 @@
         </nav>
     </header>
     <main>
-        <section class="ourFavourites">
-            <div class="ourFavouritesImages">
+        <section class="ourFavourites overlayBoxType">
+            <div class="ourFavouritesImages sectionOverlay">
                 <img src="images/ourFaves-mobile.jpeg" class="ourFaves-mobile" alt="Makayla and Jon wearing newest Alphalete Gear">
             
                 <div class="sectionInfoOverlays">
-                    <div class="ourFavourites-desktoptabletImage"></div>
+                    <!-- <div class="ourFavourites-desktoptabletImage"></div> -->
                     <h2>OUR FAVOURITES</h2>
-                    <a class="sectionButton"><p class="shopMen sectionButton">SHOP WOMEN</p></a>
+                    <a class="sectionButton"><p class="shopWomen sectionButton">SHOP WOMEN</p></a>
                     <a class="sectionButton"><p class="shopMen sectionButton">SHOP MEN</p></a>
                 </div>
             </div>
@@ -38,39 +40,66 @@
             <h1>SHOP AMPLIFY</h1>
             <ul class="carouselPart">
                 <li class="leggings carouselBox">
-                    <div class="carouselImage"></div>
+                    <div class="carouselImage"><img src="images/amplify1.jpeg" alt=""></div>
                     <div class="carouselInformation">
                         <p class="itemTitle">AMPLIFY LEGGING</p>
-                        <p class="itemColourAmount">+24 COLOURS</p>
-                        <p class="itemColour">PINK</p>
-                        <p class="itemPrice">$72.00</p>
-                        <p class="itemStatus">NEW</p>
+                        <div class="colourBox">
+                            <p class="itemColour">TEAL</p>
+                            <p class="itemColourAmount">+22 COLOURS</p>
+                        </div>
+                        <div class="priceStatus">
+                            <p class="itemPrice">$72.00</p>
+                            <p class="itemStatus">NEW</p>
+                        </div>
                     </div>
                 </li>
-                <button class="prevButton"></button>
-                <button class="nextButton"></button>
+                <li class="leggings carouselBox">
+                    <div class="carouselImage"><img src="images/amplify1.jpeg" alt=""></div>
+                    <div class="carouselInformation">
+                        <p class="itemTitle">AMPLIFY LEGGING</p>
+                        <div class="colourBox">
+                            <p class="itemColour">PINK</p>
+                            <p class="itemColourAmount">+22 COLOURS</p>
+                        </div>
+                        <div class="priceStatus">
+                            <p class="itemPrice">$72.00</p>
+                            <p class="itemStatus">NEW</p>
+                        </div>
+                    </div>
+                </li>
+                <button class="prevButton carouselButtons"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="nextButton carouselButtons"><i class="fa-solid fa-angle-right"></i></button>
             </ul>
         </section>
-        <section class="womensGallery">
-            <div class="womensClothes">
-                <div class="womensClothesImage"></div>
-                <h2>WOMEN'S</h2>
-                <button class="sportsBras sectionButton">SPORTS BRAS</button>
-                <button class="leggings sectionButton">LEGGINGS</button>
+        <section class="womensGallery overlayBoxType">
+            <div class="womensClothes sectionOverlay">
+                <img src="images/womensGallery1.jpeg" class="ourFaves-mobile" alt="Makayla and Jon wearing newest Alphalete Gear">
+
+                <div class="sectionInfoOverlays">
+                    <h2>WOMEN'S</h2>
+                    <a class="sectionButton"><p class="sportsBras">SPORTS BRAS</p></a>
+                    <a class="sectionButton"><p class="leggingsButton">LEGGINGS</p></a>
+                </div>
             </div>
-            <div class="womensShorts">
-                <div class="womensShortsImage"></div>
-                <h2>WOMEN'S SHORTS</h2>
-                <button class="shopNow sectionButton">SHOP NOW</button>
+            <div class="womensShorts sectionOverlay">
+                <img src="images/womensGallery2.jpeg" class="ourFaves-mobile" alt="Makayla and Jon wearing newest Alphalete Gear">
+
+                <div class="sectionInfoOverlays">
+                    <h2>WOMEN'S SHORTS</h2>
+                    <a class="sectionButton"><p class="shopMen sectionButton">SHOP NOW</p></a>
+                </div>
             </div>
-            <div class="forHer forThemBox">
-                <div class="forHerImage"></div>
-                <h2>FOR HER</h2>
-                <p>Explore Women's Collections</p>
-                <button class="shopThem sectionButton">SHOP WOMENS</button>
+            <div class="forHer sectionOverlay">
+                <img src="images/womensGallery3.jpeg" class="ourFaves-mobile" alt="Makayla and Jon wearing newest Alphalete Gear">
+
+                <div class="sectionInfoOverlays">
+                    <h2>FOR HER</h2>
+                    <p class="overlayBio">Explore Women's Collections</p>
+                    <a class="sectionButton"><p class="shopMen sectionButton">SHOP WOMENS</p></a>
+                </div>
             </div>
         </section>
-        <section class="mensJoggers carouselSection">
+        <!-- <section class="mensJoggers carouselSection">
             <div class="carouselTitleBox">
                 <h1>MEN'S JOGGERS</h1>
                 <button class="carouselTitleButton">VIEW ALL</button>
@@ -86,10 +115,10 @@
                         <p class="itemStatus">NEW</p>
                     </div>
                 </li>
-                <button class="prevButton"></button>
-                <button class="nextButton"></button>
+                <button class="prevButton"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="nextButton"><i class="fa-solid fa-angle-right"></i></button>
             </ul>
-        </section>
+        </section> -->
         <section class="mensGallery">
             <div class="lastChance">
                 <div class="lastChanceImage "></div>
@@ -127,7 +156,7 @@
                 </div>
             </div>
         </section>
-        <section class="shopAccessories carouselSection">
+        <!-- <section class="shopAccessories carouselSection">
             <div class="carouselTitleBox">
                 <h1>ACCESSORIES</h1>
                 <button class="carouselTitleButton">VIEW ALL</button>
@@ -146,7 +175,7 @@
                 <button class="prevButton"></button>
                 <button class="nextButton"></button>
             </ul>
-        </section>
+        </section> -->
         <footer>
             <div class="signUpSocials">
                 <p>SIGN UP FOR ALPHALETE NEWSLETTER</p>
