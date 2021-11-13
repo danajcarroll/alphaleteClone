@@ -3,12 +3,96 @@
     padding: 0;
     margin: 0;
     font-family: "GT America Expanded Bold";
+    border-radius: 1rem;
 }
 @font-face {
     font-family: "GT America Expanded Bold";
-    src: url(@font-face/gtAmerica.ttf);
-    src: url(@font-face/22b4c73e6141de7c9937f42cb58bdb4b.eot);
-    src: url(@font-face/22b4c73e6141de7c9937f42cb58bdb4b.svg);
-    src: url(@font-face/22b4c73e6141de7c9937f42cb58bdb4b.woff);
-    src: url(@font-face/22b4c73e6141de7c9937f42cb58bdb4b.woff2);
+    src: url(fonts/gtFont/gtAmerica.ttf);
+    src: url(fonts/gtFont/22b4c73e6141de7c9937f42cb58bdb4b.eot);
+    src: url(fonts/tFont/22b4c73e6141de7c9937f42cb58bdb4b.svg);
+    src: url(fonts/gtFont/22b4c73e6141de7c9937f42cb58bdb4b.woff);
+    src: url(fonts/gtFont/22b4c73e6141de7c9937f42cb58bdb4b.woff2);
+}
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url(fonts/Montserrat-Bold.otf);
+}
+:root {
+    --desk-bp: 1124px;
+    --nav-announce-height: 0px;
+    --color-primary: #f4f4f4;
+    --color-primary-trans: hsla(0,0%,95.7%,0.8);
+    --color-primary-shadow-dark: #cfcfcf;
+    --color-primary-shadow-light: #fff;
+    --color-primary-grad-start: #dcdcdc;
+    --color-primary-grad-end: #fff;
+    --color-black-shadow-dark: rgba(1,0,31,0.2);
+    --color-black-shadow-light: rgba(1,0,31,0.1);
+    --color-deepblack: #1a1a1a;
+    --color-deepwhite: #fff;
+    --color-offwhite: #f4f4f4;
+    --color-matteblack: #4d4d4d;
+    --color-matteblack-trans: rgba(77,77,77,0.2);
+    --color-matteblack-opac60: rgba(77,77,77,0.6);
+    --color-mattegrey: #696969;
+    --color-mattegrey-30: hsla(0,0%,41.2%,0.3);
+    --color-pastelgreen: #48e471;
+    --color-pastelgreen-shadow: rgba(137,226,161,0.8);
+    --color-pastelred: #ff6565;
+    --color-pastelred-shadow: hsla(0,100%,70%,0.8);
+    --color-pastelred-shadow-40: hsla(0,100%,70%,0.4);
+    --color-comingsoon: #ff8100;
+    --color-comingsoon-shadow-40: rgba(255,128,0,0.4);
+    --color-finalsale: #5d4aff;
+    --color-finalsale-shadow-40: rgba(94,77,255,0.4);
+    --color-lowstock: #cf0;
+    --color-lowstock-shadow-40: rgba(90,112,0,0.4);
+}
+/* *************** MOBILE STYLING *************** */
+body {
+    background: var(--color-offwhite);
+}
+main {
+    padding: 1rem 1rem 2rem 1rem;
+}
+ul {
+    list-style: none;
+}
+/* ***** HEADER STYLES ***** */
+header {
+    background: var(--color-offwhite);
+    box-shadow: 0px 1px 10px var(--color-primary-shadow-dark);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0.75rem 1.5rem 1.5rem 1.5rem;
+}
+.alerts {
+    text-align: center;
+    font-size: 0.6rem;
+    padding-bottom: 2rem;
+}
+.alerts p {
+    font-family: "Montserrat Bold";
+    color: var(--color-mattegrey);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    color: var(--color-matteblack);
+    font-size: 1rem;
+}
+.mobileNavigation ul {
+    display: flex;
+}
+.mobileNavigation li {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+/* TEMPORARY ICON STYLE */
+.mobileNavIcon {
+    height: 1.2rem;
+    width: 1.2rem;
+    background: var(--color-matteblack) ;
 }
