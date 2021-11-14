@@ -111,7 +111,7 @@ nav {
 
 /* ***** SECTIONS WITH TEXT ON IMAGES / OUR FAVOURITES STYLES ***** */
 .overlayBoxType {
-    height: 60vh;
+    /* height: 60vh; */
     width: 100%;
     position: relative;
     font-family: "GT America Expanded Bold";
@@ -159,6 +159,9 @@ nav {
     color: var(--color-matteblack);
     margin-bottom: 1.5rem;
     position: relative;
+}
+.mensJoggers h1 {
+    width: 11ch;
 }
 .carouselPart {
     display: flex;
@@ -234,6 +237,22 @@ i {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .forHer .sectionInfoOverlays {
-    text-align: right;
+    padding-left: 0;
+    padding-right: 1.25rem;
+    /* text-align: right; */
     right: 0;
 }
+/* ***** MENS GALLERY STYLES ***** */
+.shopSale {
+    background-color: rgba(182, 171, 151, 0.5);
+}
+.shopMens {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.shopTops {
+    background-color: rgba(0, 84, 67, 0.5);
+}
+.shopShorts {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
